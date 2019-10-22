@@ -1,0 +1,29 @@
+title: Dragon Fruit
+description: A simple e-commerce Jekyll theme for simple products.
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+
+include:
+  - _pages
+
+exclude:
+  - .sass-cache
+
+#compress.html
+compress_html:
+  clippings: [html, head, meta, title, link, body, div, script, header, footer]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+
+
+plugins:
+  - jekyll-seo-tag
