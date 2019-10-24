@@ -1,20 +1,21 @@
 /* Add your custom styles here */
-// .btn-primary{
-//     background-color: #1d4367;
-//     border-color: #1d4367;
-//     color: #ffc00f;
-//     &:hover{
-//         background-color: #ffc00f;
-//         border-color: #ffc00f;
-//         color: #1d4367;
-//     }
-// }
-// .bg-primary{
-//     background-color: #1d4367 !important
-// }
-footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    height: 100px;
+//footer{
+//    position: absolute;
+//    width: 100%;
+//    bottom: 0;
+//    height: 100px;
+//}
+.top-footer{
+    background: #4e4e4e;
+    color: #e1e1e1;
+    ul {
+        list-style-type: none;
+        padding: 0
+    }
+    a{
+        color: #e1e1e1
+    }
+    h2, h4{
+        color: #fff
+    }
 }
