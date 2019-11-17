@@ -7,6 +7,9 @@ $theme-colors: (
   "primary": #1d4367
 );
 
+// font
+$body-ff: 'Montserrat', sans-serif;
+
 
 // Width of the content area
 $content-width: 800px;
@@ -65,4 +68,4 @@ $on-laptop: 800px;
 @import "bootstrap/utilities";
 @import "bootstrap/print";
 
-@import "style", "custom";
+@import "font", "style", "custom";

@@ -1,3 +1,12 @@
+body {
+  font-family: $body-ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: asgr;
+  font-weight: bold;
+}
+
 .navbar {
   padding: 0;
   @include media-query($on-palm) {
