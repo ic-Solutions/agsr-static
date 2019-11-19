@@ -8,9 +8,8 @@ $theme-colors: (
 );
 
 // font
-$body-ff: 'Montserrat', sans-serif;
-
-
+$body-ff: "Rubik", sans-serif;
+$head-ff: "Merriweather", serif;
 // Width of the content area
 $content-width: 800px;
 $on-palm: 600px;
@@ -68,4 +67,4 @@ $on-laptop: 800px;
 @import "bootstrap/utilities";
 @import "bootstrap/print";
 
-@import "font", "style", "custom";
+@import "font", "homepage", "style", "custom";

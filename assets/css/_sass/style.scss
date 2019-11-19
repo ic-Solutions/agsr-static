@@ -2,8 +2,13 @@ body {
   font-family: $body-ff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: asgr;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $head-ff;
   font-weight: bold;
 }
 
