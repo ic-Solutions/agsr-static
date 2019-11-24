@@ -22,3 +22,11 @@ h6 {
 .tall-nav {
   padding: 1rem 1rem;
 }
+
+a.nostyle {
+  color: $body-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
