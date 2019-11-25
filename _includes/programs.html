@@ -1,0 +1,71 @@
+<!-- Page Content -->
+<section class="programs py-5">
+  <div class="program-head-card bg-light p-5">
+    <div class="program-head-card-content">
+      <h2 class="display-4 pb-3">Programs</h2>
+      <p class="lead">
+        We offer undergraduate, MA, PhD and professional learning programs
+      </p>
+      <button class="btn bg-yellow">Learn More</button>
+    </div>
+  </div>
+  {% for item in site.data.programs %}
+  <a
+    href="#"
+    data-toggle="modal"
+    data-target="#program-{{forloop.index}}"
+    class="card-{{forloop.index}} bg-light p-4 nostyle"
+  >
+    <div>
+      <h4>
+        {{item.title}}
+        <i aria-hidden="true" class="fa arrow fa-long-arrow-right"></i>
+      </h4>
+      {% for p in item.description limit: 1 %}
+      <p class="lead">
+        {{p | truncate: 150}}
+      </p>
+      {% endfor %}
+    </div>
+  </a>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="program-{{forloop.index}}"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="programLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="programLabel">{{item.title}}</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {% for p in item.description %}
+          <p class="lead">
+            {{p}}
+          </p>
+          {% endfor %}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+</section>
