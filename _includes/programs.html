@@ -17,10 +17,10 @@
     class="card-{{forloop.index}} bg-light p-4 nostyle"
   >
     <div>
-      <h4>
+      <h5>
         {{item.title}}
         <i aria-hidden="true" class="fa arrow fa-long-arrow-right"></i>
-      </h4>
+      </h5>
       {% for p in item.description limit: 1 %}
       <p class="lead">
         {{p | truncate: 150}}
