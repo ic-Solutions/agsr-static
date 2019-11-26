@@ -3,6 +3,7 @@ $(document).ready(function() {
     $(".what-we-are .lead.hide").slideToggle();
   });
   AOS.init({
-    duration: 800
+    duration: 800,
+    once: true
   });
 });
