@@ -22,6 +22,17 @@ h6 {
 .tall-nav {
   padding: 1rem 1rem;
 }
+.top-right-nav {
+  .nav-item {
+    background: #4f4f4f;
+    &:hover {
+      background-color: $primary;
+    }
+  }
+  .nav-item:first-child {
+    background-color: $yellow;
+  }
+}
 
 a.nostyle {
   color: $body-color;

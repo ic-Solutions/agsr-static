@@ -1,0 +1,28 @@
+footer {
+  * {
+    color: white;
+  }
+  .footer-logo {
+    filter: brightness(0) invert(1);
+  }
+  ul {
+    list-style: none;
+  }
+  ul.social {
+    li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+  }
+
+  .quick-links,
+  .contact {
+    li {
+      line-height: 1.8;
+    }
+  }
+
+  .footer-2 {
+    background-color: #252b31;
+  }
+}
