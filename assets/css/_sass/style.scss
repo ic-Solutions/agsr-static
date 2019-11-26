@@ -12,6 +12,15 @@ h6 {
   font-weight: bold;
 }
 
+.btn-yellow {
+  background-color: $yellow !important;
+  border-color: $yellow !important;
+  &:hover {
+    background-color: darken($yellow, 5%) !important;
+    border-color: darken($yellow, 5%) !important;
+  }
+}
+
 .navbar {
   padding: 0;
   @include media-query($on-palm) {
