@@ -32,7 +32,14 @@ h6 {
 }
 
 .tall-nav {
-  padding: 1rem 1rem;
+  padding-top: 1rem;
+
+  .nav-link {
+    &:hover {
+      color: $yellow !important;
+      border-bottom: 2px solid $yellow;
+    }
+  }
 }
 .top-right-nav {
   .nav-item {
