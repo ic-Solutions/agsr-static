@@ -1,8 +1,8 @@
 <!-- Page Content -->
 <section class="programs py-5">
-  <div class="program-head-card bg-light p-5">
+  <div class="program-head-card bg-light p-5" data-aos="fade-up">
     <div class="program-head-card-content">
-      <h2 class="display-4 pb-3 text-primary" data-aos="fade-up">Programs</h2>
+      <h2 class="display-4 pb-3 text-primary">Programs</h2>
       <p class="lead" data-aos="fade-up">
         We offer undergraduate, MA, PhD and professional learning programs
       </p>
@@ -15,7 +15,7 @@
     data-toggle="modal"
     data-target="#program-{{forloop.index}}"
     class="card-{{forloop.index}} bg-light p-4 nostyle d-block"
-  >
+    data-aos="zoom-in">
     <div>
       <h5>
         {{item.title}}
