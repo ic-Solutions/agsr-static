@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2 class="display-4 pb-4 text-primary">Gallery</h2>
+                <h2 class="display-4 pb-4 text-primary" data-aos="fade-up">Gallery</h2>
             </div>
         </div>
         <div class="row">
             {% for item in site.data.gallery %}
-                <div class="col-lg-3 col-md-4 mb-4 thumb">
+                <div class="col-lg-3 col-md-4 mb-4 thumb" data-aos="fade-up">
                     <a class="fancybox" href="{{item.image}}" rel="ligthbox">
                         <img alt="{{item.title}}" class="zoom" src="{{item.image}}">
                     </a>
@@ -16,7 +16,7 @@
         </div>
         <div class="row pt-4">
             <div class="col-md-12 text-center">
-                <a class="btn btn-yellow" href="#">View More</a>
+                <a class="btn btn-yellow" data-aos="fade-up" href="#">View More</a>
             </div>
         </div>
     </div>
