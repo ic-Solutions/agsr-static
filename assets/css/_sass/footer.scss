@@ -25,4 +25,10 @@ footer {
   .footer-2 {
     background-color: #252b31;
   }
+  a {
+    &:hover {
+      color: $yellow !important;
+      text-decoration: none !important;
+    }
+  }
 }
